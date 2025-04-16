@@ -13,7 +13,7 @@ export class NavigationComponent {
         'Itinéraires',
         'Horaires par ligne/arrêt',
         'A proximité',
-        'Vers l\'aéropo',
+        'Vers l\'aéroport',
         'Info trafic',
         'Plan intempéries',
         'Lignes express'
