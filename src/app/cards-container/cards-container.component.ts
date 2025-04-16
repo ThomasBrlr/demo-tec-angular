@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './cards-container.component.scss'
 })
 export class CardsContainerComponent {
-
+  chipsItems = [
+    {name: 'Booba', picture: 'https://cataas.com/cat'},
+    {name: 'Lubna', picture: 'https://cataas.com/cat'},
+    {name: 'Triss', picture: 'https://cataas.com/cat'},
+    {name: 'Neftis', picture: 'https://cataas.com/cat'},
+  ]
 }
