@@ -1,11 +1,7 @@
 import { Component, signal } from '@angular/core';
-import { NgOptimizedImage } from '@angular/common';
 
 @Component({
   selector: 'app-navigation',
-  imports: [
-    NgOptimizedImage
-  ],
   templateUrl: './navigation.component.html',
   styleUrl: './navigation.component.scss'
 })
@@ -17,7 +13,7 @@ export class NavigationComponent {
         'Itinéraires',
         'Horaires par ligne/arrêt',
         'A proximité',
-        'Vers l\'aéropo',
+        'Vers l\'aéroport',
         'Info trafic',
         'Plan intempéries',
         'Lignes express'

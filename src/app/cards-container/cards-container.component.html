@@ -1,0 +1,34 @@
+<div class="flex flex-col md:flex-row gap-4">
+  <div class="rounded-5xl bg-tertiary text-white p-8 flex flex-col gap-8">
+    <h2 class="text-2xl">Speakers</h2>
+    <div class="flex gap-12 justify-between">
+      <div class="bg-white rounded-full min-w-16 h-16 text-tertiary text-4xl flex justify-center items-center">
+        <span aria-hidden="true" class="-rotate-45">&rarr;</span>
+      </div>
+      <div class="w-1/2">
+        <p>Hear from global AI leaders, researchers, and entrepreneurs who are defining the future of artificial intelligence.</p>
+      </div>
+    </div>
+    <div class="flex flex-col gap-4 md:flex-row items-center md:justify-between">
+      <div class="flex items-center w-full">
+        @for (item of chipsItems; track item) {
+          <img class="rounded-full w-16 h-16 -mr-4" [src]=item.picture alt="cat-image">
+        }
+      </div>
+      <button class="flex items-center gap-x-4 text-xl text-white py-4 px-8 border-1 border-white rounded-full">
+        <span>And more</span>
+        <span aria-hidden="true" class="-rotate-45 text-xl">&rarr;</span>
+      </button>
+    </div>
+  </div>
+  <div class="flex flex-col gap-4">
+    <div class="rounded-5xl bg-tertiary text-white p-8 flex flex-col gap-8">
+      <h2 class="text-2xl">Technologies</h2>
+      <p>Explore advanced machine learning, natural language processing, AI-driven automation, and emerging cybersecurity applications.</p>
+    </div>
+    <div class="rounded-5xl bg-light p-8 flex flex-col gap-8">
+      <h2 class="text-2xl">Networking opportunities</h2>
+      <p>Enjoy exclusive networking sessions, roundtables, and social events to foster collaboration and spark new partnerships.</p>
+    </div>
+  </div>
+</div>

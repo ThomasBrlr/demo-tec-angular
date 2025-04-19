@@ -1,5 +1,5 @@
-<header class="bg-white">
-  <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+<header class="bg-black mb-8">
+  <nav class="mx-auto flex items-center justify-between" aria-label="Global">
     <div class="flex lg:flex-1">
       <a href="#" class="-m-1.5 p-1.5">
         <span class="sr-only">Le Tec</span>
@@ -24,7 +24,7 @@
           @if (item.subMenuItems.length !== 0) {
             <div class="relative">
               <button type="button"
-                      class="flex items-center gap-x-1 text-sm/6 font-semibold text-secondary p-4 border-1 border-transparent hover:border-1 hover:border-secondary hover:rounded-full p-4 hover:border-1 hover:rounded-full box-border border-1 border-transparent hover:border-1 hover:border-secondary hover:rounded-full p-4 hover:border-1 hover:rounded-full box-border"
+                      class="flex items-center gap-x-1 text-sm/6 font-semibold text-white p-4 border-1 border-transparent hover:border-1 hover:border-white hover:rounded-full"
                       aria-expanded="false" (click)="showSubItems()">
                 {{ item.name }}
                 <svg class="size-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
@@ -47,12 +47,12 @@
               -->
               @if (subItemsState()) {
                 <div
-                  class="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+                  class="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-dark shadow-lg ring-1 ring-gray-900/5">
                   <div class="p-4">
                     @for (subItem of item.subMenuItems; track subItem) {
-                      <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50">
+                      <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-black">
                         <div class="flex-auto">
-                          <a href="#" class="block font-semibold text-secondary">
+                          <a href="#" class="block font-semibold text-white">
                             {{ subItem }}
                             <span class="absolute inset-0"></span>
                           </a>
@@ -66,11 +66,11 @@
             </div>
           } @else {
             <a href="#"
-               class="text-sm/6 font-semibold text-secondary p-4 border-1 border-transparent hover:border-1 hover:border-secondary hover:rounded-full p-4 hover:border-1 hover:rounded-full box-border hover:border-1 hover:rounded-full">{{ item.name }}</a>
+               class="text-sm/6 font-semibold text-white p-4 border-1 border-transparent hover:border-1 hover:border-white hover:rounded-full p-4 hover:border-1 hover:rounded-full box-border hover:border-1 hover:rounded-full">{{ item.name }}</a>
           }
         }
         <a href="#"
-           class="text-sm/6 font-semibold text-secondary p-4 border-1 border-transparent hover:border-1 hover:border-secondary hover:rounded-full p-4 hover:border-1 hover:rounded-full box-border hover:border-1 hover:rounded-full">E-shop
+           class="text-sm/6 font-semibold text-white p-4 border-1 border-transparent hover:border-1 hover:border-white hover:rounded-full p-4 hover:border-1 hover:rounded-full box-border hover:border-1 hover:rounded-full">E-shop
           <span aria-hidden="true">&rarr;</span></a>
       </div>
     </div>
@@ -82,7 +82,7 @@
       <!-- Background backdrop, show/hide based on slide-over state. -->
       <div class="fixed inset-0 z-10"></div>
       <div
-        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
         <div class="flex items-center justify-between">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Le TEC</span>
@@ -104,7 +104,7 @@
                 @if (item.subMenuItems.length !== 0) {
                   <div class="-mx-3">
                     <button type="button"
-                            class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-secondary hover:bg-gray-50"
+                            class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base/7 font-semibold text-white hover:bg-gray-50"
                             aria-controls="disclosure-1" aria-expanded="false" (click)="showSubItems()">
                       Se déplacer
                       <!--
@@ -124,20 +124,20 @@
                       <div class="mt-2 space-y-2" id="disclosure-1">
                         @for (subItem of item.subMenuItems; track subItem) {
                           <a href="#"
-                             class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-secondary hover:bg-gray-50">{{ subItem }}</a>
+                             class="block rounded-lg py-2 pr-3 pl-6 text-sm/7 font-semibold text-white hover:bg-gray-50">{{ subItem }}</a>
                         }
                       </div>
                     }
                   </div>
                 } @else {
                   <a href="#"
-                     class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-secondary hover:bg-gray-50">{{ item.name }}</a>
+                     class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-gray-50">{{ item.name }}</a>
                 }
               }
             </div>
             <div class="py-6">
               <a href="#"
-                 class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-secondary hover:bg-gray-50">E-shop</a>
+                 class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-gray-50">E-shop</a>
             </div>
           </div>
         </div>

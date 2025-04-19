@@ -3,4 +3,15 @@
 @theme {
   --color-primary: #FFCD00;
   --color-secondary: #E4002B;
+  --color-tertiary: #0147FF;
+  --color-dark: #1a1a1a;
+  --color-light: #DEDEE0;
+
+  --radius-5xl: 50px;
+}
+
+body {
+  padding: 2rem;
+  max-width: 1240px;
+  margin: 0 auto;
 }
